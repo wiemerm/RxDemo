@@ -8,12 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		60548B6D247DA33F0086EFE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548B6C247DA33F0086EFE7 /* AppDelegate.swift */; };
-		60548B6F247DA33F0086EFE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548B6E247DA33F0086EFE7 /* SceneDelegate.swift */; };
-		60548B71247DA33F0086EFE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548B70247DA33F0086EFE7 /* ViewController.swift */; };
-		60548B74247DA33F0086EFE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60548B72247DA33F0086EFE7 /* Main.storyboard */; };
+		60548B71247DA33F0086EFE7 /* IOSSpartansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548B70247DA33F0086EFE7 /* IOSSpartansViewController.swift */; };
 		60548B76247DA3400086EFE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60548B75247DA3400086EFE7 /* Assets.xcassets */; };
 		60548B79247DA3400086EFE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60548B77247DA3400086EFE7 /* LaunchScreen.storyboard */; };
 		60548B84247DA3400086EFE7 /* RxDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548B83247DA3400086EFE7 /* RxDemoTests.swift */; };
+		60548B94247DAD5A0086EFE7 /* RxSwift.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 60548B92247DAD5A0086EFE7 /* RxSwift.framework.dSYM */; };
+		60548B95247DAD5A0086EFE7 /* RxCocoa.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = 60548B93247DAD5A0086EFE7 /* RxCocoa.framework.dSYM */; };
+		60548B98247DADF20086EFE7 /* Spartan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548B97247DADF20086EFE7 /* Spartan.swift */; };
+		60548B9B247E9A150086EFE7 /* SpartansHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548B9A247E9A150086EFE7 /* SpartansHelper.swift */; };
+		60548B9D247E9DE60086EFE7 /* SpartansService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548B9C247E9DE60086EFE7 /* SpartansService.swift */; };
+		60548BA0247EA0F60086EFE7 /* IOSSpartansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548B9F247EA0F60086EFE7 /* IOSSpartansModel.swift */; };
+		60548BA2247EAF050086EFE7 /* IOSSpartansPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BA1247EAF050086EFE7 /* IOSSpartansPresenter.swift */; };
+		60548BA4247EAF5C0086EFE7 /* SpartansView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BA3247EAF5C0086EFE7 /* SpartansView.swift */; };
+		60548BA6247EB8290086EFE7 /* AutoResizingTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BA5247EB8290086EFE7 /* AutoResizingTableView.swift */; };
+		60548BA8247EB9300086EFE7 /* SpartanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BA7247EB9300086EFE7 /* SpartanTableViewCell.swift */; };
+		60548BAA247EB9B50086EFE7 /* UITableViewCell+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BA9247EB9B50086EFE7 /* UITableViewCell+Utility.swift */; };
+		60548BAC247EBCCD0086EFE7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BAB247EBCCD0086EFE7 /* Constants.swift */; };
+		60548BAE247ECB8E0086EFE7 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BAD247ECB8E0086EFE7 /* ErrorView.swift */; };
+		60548BB3247EF5CF0086EFE7 /* AndroidSpartansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BB2247EF5CF0086EFE7 /* AndroidSpartansViewController.swift */; };
+		60548BB5247EF6130086EFE7 /* AndroidSpartansPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BB4247EF6130086EFE7 /* AndroidSpartansPresenter.swift */; };
+		60548BB7247EFA940086EFE7 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BB6247EFA940086EFE7 /* SelectionViewController.swift */; };
+		60548BB9247EFAFF0086EFE7 /* ConstraintHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BB8247EFAFF0086EFE7 /* ConstraintHelpers.swift */; };
+		60CC5E63247FEE920029AC63 /* SpartanDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CC5E62247FEE920029AC63 /* SpartanDetailsView.swift */; };
+		60CC5E65247FEEA40029AC63 /* SpartanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CC5E64247FEEA40029AC63 /* SpartanDetailsViewController.swift */; };
+		60CC5E69247FFAD50029AC63 /* AndroidSpartansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CC5E68247FFAD50029AC63 /* AndroidSpartansModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,15 +47,33 @@
 /* Begin PBXFileReference section */
 		60548B69247DA33F0086EFE7 /* RxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60548B6C247DA33F0086EFE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60548B6E247DA33F0086EFE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		60548B70247DA33F0086EFE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		60548B73247DA33F0086EFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60548B70247DA33F0086EFE7 /* IOSSpartansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSSpartansViewController.swift; sourceTree = "<group>"; };
 		60548B75247DA3400086EFE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60548B78247DA3400086EFE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60548B7A247DA3400086EFE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60548B7F247DA3400086EFE7 /* RxDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60548B83247DA3400086EFE7 /* RxDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDemoTests.swift; sourceTree = "<group>"; };
 		60548B85247DA3400086EFE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60548B92247DAD5A0086EFE7 /* RxSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxSwift.framework.dSYM; path = Carthage/Build/iOS/RxSwift.framework.dSYM; sourceTree = SOURCE_ROOT; };
+		60548B93247DAD5A0086EFE7 /* RxCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RxCocoa.framework.dSYM; path = Carthage/Build/iOS/RxCocoa.framework.dSYM; sourceTree = SOURCE_ROOT; };
+		60548B97247DADF20086EFE7 /* Spartan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spartan.swift; sourceTree = "<group>"; };
+		60548B9A247E9A150086EFE7 /* SpartansHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartansHelper.swift; sourceTree = "<group>"; };
+		60548B9C247E9DE60086EFE7 /* SpartansService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartansService.swift; sourceTree = "<group>"; };
+		60548B9F247EA0F60086EFE7 /* IOSSpartansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSSpartansModel.swift; sourceTree = "<group>"; };
+		60548BA1247EAF050086EFE7 /* IOSSpartansPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSSpartansPresenter.swift; sourceTree = "<group>"; };
+		60548BA3247EAF5C0086EFE7 /* SpartansView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartansView.swift; sourceTree = "<group>"; };
+		60548BA5247EB8290086EFE7 /* AutoResizingTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoResizingTableView.swift; sourceTree = "<group>"; };
+		60548BA7247EB9300086EFE7 /* SpartanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartanTableViewCell.swift; sourceTree = "<group>"; };
+		60548BA9247EB9B50086EFE7 /* UITableViewCell+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Utility.swift"; sourceTree = "<group>"; };
+		60548BAB247EBCCD0086EFE7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		60548BAD247ECB8E0086EFE7 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		60548BB2247EF5CF0086EFE7 /* AndroidSpartansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidSpartansViewController.swift; sourceTree = "<group>"; };
+		60548BB4247EF6130086EFE7 /* AndroidSpartansPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidSpartansPresenter.swift; sourceTree = "<group>"; };
+		60548BB6247EFA940086EFE7 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		60548BB8247EFAFF0086EFE7 /* ConstraintHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintHelpers.swift; sourceTree = "<group>"; };
+		60CC5E62247FEE920029AC63 /* SpartanDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartanDetailsView.swift; sourceTree = "<group>"; };
+		60CC5E64247FEEA40029AC63 /* SpartanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartanDetailsViewController.swift; sourceTree = "<group>"; };
+		60CC5E68247FFAD50029AC63 /* AndroidSpartansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidSpartansModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				60548B6B247DA33F0086EFE7 /* RxDemo */,
+				60548B91247DAD2C0086EFE7 /* Frameworks */,
 				60548B82247DA3400086EFE7 /* RxDemoTests */,
 				60548B6A247DA33F0086EFE7 /* Products */,
 			);
@@ -79,13 +116,17 @@
 		60548B6B247DA33F0086EFE7 /* RxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				60548BB1247EF5B20086EFE7 /* Android Version */,
+				60548BB0247EF5A90086EFE7 /* iOS Version */,
+				60548B96247DADE60086EFE7 /* Objects */,
+				60548B99247E99510086EFE7 /* Helpers */,
+				60548B9E247EA0D50086EFE7 /* SpartansList */,
+				60CC5E61247FEE570029AC63 /* SpartanDetails */,
 				60548B6C247DA33F0086EFE7 /* AppDelegate.swift */,
-				60548B6E247DA33F0086EFE7 /* SceneDelegate.swift */,
-				60548B70247DA33F0086EFE7 /* ViewController.swift */,
-				60548B72247DA33F0086EFE7 /* Main.storyboard */,
 				60548B75247DA3400086EFE7 /* Assets.xcassets */,
-				60548B77247DA3400086EFE7 /* LaunchScreen.storyboard */,
 				60548B7A247DA3400086EFE7 /* Info.plist */,
+				60548B77247DA3400086EFE7 /* LaunchScreen.storyboard */,
+				60548BB6247EFA940086EFE7 /* SelectionViewController.swift */,
 			);
 			path = RxDemo;
 			sourceTree = "<group>";
@@ -99,6 +140,75 @@
 			path = RxDemoTests;
 			sourceTree = "<group>";
 		};
+		60548B91247DAD2C0086EFE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60548B93247DAD5A0086EFE7 /* RxCocoa.framework.dSYM */,
+				60548B92247DAD5A0086EFE7 /* RxSwift.framework.dSYM */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		60548B96247DADE60086EFE7 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				60548B97247DADF20086EFE7 /* Spartan.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		60548B99247E99510086EFE7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				60548B9A247E9A150086EFE7 /* SpartansHelper.swift */,
+				60548BA5247EB8290086EFE7 /* AutoResizingTableView.swift */,
+				60548BA9247EB9B50086EFE7 /* UITableViewCell+Utility.swift */,
+				60548BAB247EBCCD0086EFE7 /* Constants.swift */,
+				60548BB8247EFAFF0086EFE7 /* ConstraintHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		60548B9E247EA0D50086EFE7 /* SpartansList */ = {
+			isa = PBXGroup;
+			children = (
+				60548B9C247E9DE60086EFE7 /* SpartansService.swift */,
+				60548B9F247EA0F60086EFE7 /* IOSSpartansModel.swift */,
+				60548BA3247EAF5C0086EFE7 /* SpartansView.swift */,
+				60548BA7247EB9300086EFE7 /* SpartanTableViewCell.swift */,
+				60548BAD247ECB8E0086EFE7 /* ErrorView.swift */,
+			);
+			path = SpartansList;
+			sourceTree = "<group>";
+		};
+		60548BB0247EF5A90086EFE7 /* iOS Version */ = {
+			isa = PBXGroup;
+			children = (
+				60548B70247DA33F0086EFE7 /* IOSSpartansViewController.swift */,
+				60548BA1247EAF050086EFE7 /* IOSSpartansPresenter.swift */,
+			);
+			path = "iOS Version";
+			sourceTree = "<group>";
+		};
+		60548BB1247EF5B20086EFE7 /* Android Version */ = {
+			isa = PBXGroup;
+			children = (
+				60548BB2247EF5CF0086EFE7 /* AndroidSpartansViewController.swift */,
+				60548BB4247EF6130086EFE7 /* AndroidSpartansPresenter.swift */,
+				60CC5E68247FFAD50029AC63 /* AndroidSpartansModel.swift */,
+			);
+			path = "Android Version";
+			sourceTree = "<group>";
+		};
+		60CC5E61247FEE570029AC63 /* SpartanDetails */ = {
+			isa = PBXGroup;
+			children = (
+				60CC5E62247FEE920029AC63 /* SpartanDetailsView.swift */,
+				60CC5E64247FEEA40029AC63 /* SpartanDetailsViewController.swift */,
+			);
+			path = SpartanDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,6 +219,7 @@
 				60548B65247DA33F0086EFE7 /* Sources */,
 				60548B66247DA33F0086EFE7 /* Frameworks */,
 				60548B67247DA33F0086EFE7 /* Resources */,
+				60548B8F247DAC020086EFE7 /* Copy Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +237,7 @@
 				60548B7B247DA3400086EFE7 /* Sources */,
 				60548B7C247DA3400086EFE7 /* Frameworks */,
 				60548B7D247DA3400086EFE7 /* Resources */,
+				60548B90247DAC610086EFE7 /* Carthage Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,9 +292,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60548B95247DAD5A0086EFE7 /* RxCocoa.framework.dSYM in Resources */,
 				60548B79247DA3400086EFE7 /* LaunchScreen.storyboard in Resources */,
 				60548B76247DA3400086EFE7 /* Assets.xcassets in Resources */,
-				60548B74247DA33F0086EFE7 /* Main.storyboard in Resources */,
+				60548B94247DAD5A0086EFE7 /* RxSwift.framework.dSYM in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +308,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		60548B8F247DAC020086EFE7 /* Copy Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+			);
+			name = "Copy Carthage Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		60548B90247DAC610086EFE7 /* Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+			);
+			name = "Carthage Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		60548B65247DA33F0086EFE7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60548B71247DA33F0086EFE7 /* ViewController.swift in Sources */,
+				60548B71247DA33F0086EFE7 /* IOSSpartansViewController.swift in Sources */,
+				60548BB9247EFAFF0086EFE7 /* ConstraintHelpers.swift in Sources */,
+				60548B98247DADF20086EFE7 /* Spartan.swift in Sources */,
+				60CC5E69247FFAD50029AC63 /* AndroidSpartansModel.swift in Sources */,
 				60548B6D247DA33F0086EFE7 /* AppDelegate.swift in Sources */,
-				60548B6F247DA33F0086EFE7 /* SceneDelegate.swift in Sources */,
+				60548BA0247EA0F60086EFE7 /* IOSSpartansModel.swift in Sources */,
+				60548BB5247EF6130086EFE7 /* AndroidSpartansPresenter.swift in Sources */,
+				60548BA4247EAF5C0086EFE7 /* SpartansView.swift in Sources */,
+				60548BB7247EFA940086EFE7 /* SelectionViewController.swift in Sources */,
+				60548BA8247EB9300086EFE7 /* SpartanTableViewCell.swift in Sources */,
+				60548B9D247E9DE60086EFE7 /* SpartansService.swift in Sources */,
+				60548BA6247EB8290086EFE7 /* AutoResizingTableView.swift in Sources */,
+				60CC5E65247FEEA40029AC63 /* SpartanDetailsViewController.swift in Sources */,
+				60548BA2247EAF050086EFE7 /* IOSSpartansPresenter.swift in Sources */,
+				60548BAA247EB9B50086EFE7 /* UITableViewCell+Utility.swift in Sources */,
+				60CC5E63247FEE920029AC63 /* SpartanDetailsView.swift in Sources */,
+				60548B9B247E9A150086EFE7 /* SpartansHelper.swift in Sources */,
+				60548BB3247EF5CF0086EFE7 /* AndroidSpartansViewController.swift in Sources */,
+				60548BAE247ECB8E0086EFE7 /* ErrorView.swift in Sources */,
+				60548BAC247EBCCD0086EFE7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +399,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		60548B72247DA33F0086EFE7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				60548B73247DA33F0086EFE7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		60548B77247DA3400086EFE7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +446,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -340,6 +507,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -364,6 +532,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MENF5HC86G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -372,7 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wwt.com.RxDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -382,6 +554,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MENF5HC86G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RxDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,7 +566,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wwt.com.RxDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -401,6 +577,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MENF5HC86G;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = RxDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -423,6 +600,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MENF5HC86G;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Carthage/Build/iOS";
 				INFOPLIST_FILE = RxDemoTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
