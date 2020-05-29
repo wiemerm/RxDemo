@@ -14,4 +14,10 @@ struct AndroidSpartansModel {
             .observeOn(MainScheduler.instance)
             .asObservable()
     }
+
+    func androidFetchSpartan(serviceNumber: String) -> Observable<Spartan> {
+        return service.fetchSpartan(serviceNumber: serviceNumber)
+            .observeOn(MainScheduler.instance)
+            .asObservable()
+    }
 }

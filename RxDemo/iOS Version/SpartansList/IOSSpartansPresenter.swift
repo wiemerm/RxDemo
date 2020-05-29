@@ -6,7 +6,6 @@ struct iOSSpartansPresenter {
     private let disposeBag = DisposeBag()
 
     init(model: IOSSpartansModelInterface, view: SpartansView) {
-
         model.spartansListObservable
             .compactMap { try? $0.get() }
             .subscribe(onNext: { spartans in

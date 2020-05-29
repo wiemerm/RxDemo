@@ -5,22 +5,24 @@ class SpartansView: UIView {
     private let disposeBag = DisposeBag()
 
     let retryObservable: Observable<Void>
-    let dismissObservable: Observable<Void>
+    let alertObservable: Observable<Void>
     private(set) var spartanObservable: Observable<Spartan>?
 
     private var spartans = [Spartan]()
 
     private let tableview = UITableView()
     private let errorView = ErrorView()
-    private let dismissButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+    private let alertButton = UIButton()
 
     init() {
         retryObservable = errorView.retryObservable
-        dismissObservable = dismissButton.rx.tap.asObservable()
+        alertObservable = alertButton.rx.tap.asObservable()
 
         super.init(frame: .zero)
 
         backgroundColor = .white
+
+        alertButton.setTitleColor(.red, for: .normal)
 
         tableview.dataSource = self
         tableview.delegate = self
@@ -28,31 +30,37 @@ class SpartansView: UIView {
         tableview.tableFooterView = UIView()
         tableview.register(SpartanTableViewCell.self, forCellReuseIdentifier: SpartanTableViewCell.reuseIdentifier)
 
-        dismissButton.setTitle("X", for: .normal)
-        dismissButton.setTitleColor(.black, for: .normal)
+        alertButton.setTitle("Show Alert", for: .normal)
+        alertButton.setTitleColor(.black, for: .normal)
 
         addSubview(tableview)
         addSubview(errorView)
-        addSubview(dismissButton)
+        addSubview(alertButton)
 
         tableview.translatesAutoresizingMaskIntoConstraints = false
         tableview.constrainToSidesOfView(self, padding: 8)
-        tableview.topAnchor.constraint(equalTo: dismissButton.bottomAnchor, constant: 16).isActive = true
+        tableview.topAnchor.constraint(equalTo: alertButton.bottomAnchor, constant: 16).isActive = true
         tableview.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8).isActive = true
 
         errorView.translatesAutoresizingMaskIntoConstraints = false
         errorView.constrainToSidesOfView(self, padding: 8)
-        errorView.topAnchor.constraint(equalTo: dismissButton.bottomAnchor, constant: 16).isActive = true
+        errorView.topAnchor.constraint(equalTo: alertButton.bottomAnchor, constant: 16).isActive = true
         errorView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
 
-        dismissButton.translatesAutoresizingMaskIntoConstraints = false
-        dismissButton.constrainToTopOfView(self, padding: 8)
-        dismissButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 8).isActive = true
+        alertButton.translatesAutoresizingMaskIntoConstraints = false
+        alertButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 8).isActive = true
+        alertButton.leftAnchor.constraint(equalTo: leftAnchor, constant: 8).isActive = true
 
         errorView.isHidden = true
         tableview.isHidden = true
 
-        spartanObservable = tableview.rx.itemSelected.map { [unowned self] in self.spartans[$0.row] }
+        spartanObservable = tableview.rx
+            .itemSelected
+            .do(onNext: { [weak self] indexPath in
+                self?.tableview.deselectRow(at: indexPath, animated: true)
+            })
+            .map { [unowned self] in self.spartans[$0.row] }
+
     }
 
     required init?(coder: NSCoder) {

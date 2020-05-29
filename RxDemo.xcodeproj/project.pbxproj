@@ -29,8 +29,12 @@
 		60548BB5247EF6130086EFE7 /* AndroidSpartansPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BB4247EF6130086EFE7 /* AndroidSpartansPresenter.swift */; };
 		60548BB7247EFA940086EFE7 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BB6247EFA940086EFE7 /* SelectionViewController.swift */; };
 		60548BB9247EFAFF0086EFE7 /* ConstraintHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60548BB8247EFAFF0086EFE7 /* ConstraintHelpers.swift */; };
+		6091DE90248159110038BFE2 /* TitleLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6091DE8F248159110038BFE2 /* TitleLabelView.swift */; };
+		6091DE9224815B4C0038BFE2 /* IOSSpartanDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6091DE9124815B4C0038BFE2 /* IOSSpartanDetailsPresenter.swift */; };
+		6091DE9424815DAF0038BFE2 /* AndroidSpartanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6091DE9324815DAF0038BFE2 /* AndroidSpartanDetailViewController.swift */; };
+		6091DE9624815DE90038BFE2 /* AndroidSpartanDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6091DE9524815DE90038BFE2 /* AndroidSpartanDetailsPresenter.swift */; };
 		60CC5E63247FEE920029AC63 /* SpartanDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CC5E62247FEE920029AC63 /* SpartanDetailsView.swift */; };
-		60CC5E65247FEEA40029AC63 /* SpartanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CC5E64247FEEA40029AC63 /* SpartanDetailsViewController.swift */; };
+		60CC5E65247FEEA40029AC63 /* IOSSpartanDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CC5E64247FEEA40029AC63 /* IOSSpartanDetailsViewController.swift */; };
 		60CC5E69247FFAD50029AC63 /* AndroidSpartansModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60CC5E68247FFAD50029AC63 /* AndroidSpartansModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -71,8 +75,12 @@
 		60548BB4247EF6130086EFE7 /* AndroidSpartansPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidSpartansPresenter.swift; sourceTree = "<group>"; };
 		60548BB6247EFA940086EFE7 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		60548BB8247EFAFF0086EFE7 /* ConstraintHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintHelpers.swift; sourceTree = "<group>"; };
+		6091DE8F248159110038BFE2 /* TitleLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleLabelView.swift; sourceTree = "<group>"; };
+		6091DE9124815B4C0038BFE2 /* IOSSpartanDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSSpartanDetailsPresenter.swift; sourceTree = "<group>"; };
+		6091DE9324815DAF0038BFE2 /* AndroidSpartanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidSpartanDetailViewController.swift; sourceTree = "<group>"; };
+		6091DE9524815DE90038BFE2 /* AndroidSpartanDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidSpartanDetailsPresenter.swift; sourceTree = "<group>"; };
 		60CC5E62247FEE920029AC63 /* SpartanDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartanDetailsView.swift; sourceTree = "<group>"; };
-		60CC5E64247FEEA40029AC63 /* SpartanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpartanDetailsViewController.swift; sourceTree = "<group>"; };
+		60CC5E64247FEEA40029AC63 /* IOSSpartanDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSSpartanDetailsViewController.swift; sourceTree = "<group>"; };
 		60CC5E68247FFAD50029AC63 /* AndroidSpartansModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidSpartansModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,17 +124,10 @@
 		60548B6B247DA33F0086EFE7 /* RxDemo */ = {
 			isa = PBXGroup;
 			children = (
+				60A9FC2C2481790C009E569C /* Shared */,
 				60548BB1247EF5B20086EFE7 /* Android Version */,
 				60548BB0247EF5A90086EFE7 /* iOS Version */,
-				60548B96247DADE60086EFE7 /* Objects */,
-				60548B99247E99510086EFE7 /* Helpers */,
-				60548B9E247EA0D50086EFE7 /* SpartansList */,
-				60CC5E61247FEE570029AC63 /* SpartanDetails */,
-				60548B6C247DA33F0086EFE7 /* AppDelegate.swift */,
-				60548B75247DA3400086EFE7 /* Assets.xcassets */,
 				60548B7A247DA3400086EFE7 /* Info.plist */,
-				60548B77247DA3400086EFE7 /* LaunchScreen.storyboard */,
-				60548BB6247EFA940086EFE7 /* SelectionViewController.swift */,
 			);
 			path = RxDemo;
 			sourceTree = "<group>";
@@ -173,7 +174,6 @@
 			isa = PBXGroup;
 			children = (
 				60548B9C247E9DE60086EFE7 /* SpartansService.swift */,
-				60548B9F247EA0F60086EFE7 /* IOSSpartansModel.swift */,
 				60548BA3247EAF5C0086EFE7 /* SpartansView.swift */,
 				60548BA7247EB9300086EFE7 /* SpartanTableViewCell.swift */,
 				60548BAD247ECB8E0086EFE7 /* ErrorView.swift */,
@@ -184,8 +184,9 @@
 		60548BB0247EF5A90086EFE7 /* iOS Version */ = {
 			isa = PBXGroup;
 			children = (
-				60548B70247DA33F0086EFE7 /* IOSSpartansViewController.swift */,
-				60548BA1247EAF050086EFE7 /* IOSSpartansPresenter.swift */,
+				60A9FC312481795C009E569C /* SpartanDetails */,
+				60A9FC3024817956009E569C /* SpartansList */,
+				60548B9F247EA0F60086EFE7 /* IOSSpartansModel.swift */,
 			);
 			path = "iOS Version";
 			sourceTree = "<group>";
@@ -193,18 +194,69 @@
 		60548BB1247EF5B20086EFE7 /* Android Version */ = {
 			isa = PBXGroup;
 			children = (
-				60548BB2247EF5CF0086EFE7 /* AndroidSpartansViewController.swift */,
-				60548BB4247EF6130086EFE7 /* AndroidSpartansPresenter.swift */,
+				60A9FC2E24817937009E569C /* SpartanDetails */,
+				60A9FC2D24817931009E569C /* SpartansList */,
 				60CC5E68247FFAD50029AC63 /* AndroidSpartansModel.swift */,
 			);
 			path = "Android Version";
+			sourceTree = "<group>";
+		};
+		60A9FC2C2481790C009E569C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				60548B96247DADE60086EFE7 /* Objects */,
+				60CC5E61247FEE570029AC63 /* SpartanDetails */,
+				60548B99247E99510086EFE7 /* Helpers */,
+				60548BB6247EFA940086EFE7 /* SelectionViewController.swift */,
+				60548B77247DA3400086EFE7 /* LaunchScreen.storyboard */,
+				60548B75247DA3400086EFE7 /* Assets.xcassets */,
+				60548B6C247DA33F0086EFE7 /* AppDelegate.swift */,
+				60548B9E247EA0D50086EFE7 /* SpartansList */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		60A9FC2D24817931009E569C /* SpartansList */ = {
+			isa = PBXGroup;
+			children = (
+				60548BB4247EF6130086EFE7 /* AndroidSpartansPresenter.swift */,
+				60548BB2247EF5CF0086EFE7 /* AndroidSpartansViewController.swift */,
+			);
+			path = SpartansList;
+			sourceTree = "<group>";
+		};
+		60A9FC2E24817937009E569C /* SpartanDetails */ = {
+			isa = PBXGroup;
+			children = (
+				6091DE9524815DE90038BFE2 /* AndroidSpartanDetailsPresenter.swift */,
+				6091DE9324815DAF0038BFE2 /* AndroidSpartanDetailViewController.swift */,
+			);
+			path = SpartanDetails;
+			sourceTree = "<group>";
+		};
+		60A9FC3024817956009E569C /* SpartansList */ = {
+			isa = PBXGroup;
+			children = (
+				60548BA1247EAF050086EFE7 /* IOSSpartansPresenter.swift */,
+				60548B70247DA33F0086EFE7 /* IOSSpartansViewController.swift */,
+			);
+			path = SpartansList;
+			sourceTree = "<group>";
+		};
+		60A9FC312481795C009E569C /* SpartanDetails */ = {
+			isa = PBXGroup;
+			children = (
+				6091DE9124815B4C0038BFE2 /* IOSSpartanDetailsPresenter.swift */,
+				60CC5E64247FEEA40029AC63 /* IOSSpartanDetailsViewController.swift */,
+			);
+			path = SpartanDetails;
 			sourceTree = "<group>";
 		};
 		60CC5E61247FEE570029AC63 /* SpartanDetails */ = {
 			isa = PBXGroup;
 			children = (
 				60CC5E62247FEE920029AC63 /* SpartanDetailsView.swift */,
-				60CC5E64247FEEA40029AC63 /* SpartanDetailsViewController.swift */,
+				6091DE8F248159110038BFE2 /* TitleLabelView.swift */,
 			);
 			path = SpartanDetails;
 			sourceTree = "<group>";
@@ -363,13 +415,17 @@
 				60CC5E69247FFAD50029AC63 /* AndroidSpartansModel.swift in Sources */,
 				60548B6D247DA33F0086EFE7 /* AppDelegate.swift in Sources */,
 				60548BA0247EA0F60086EFE7 /* IOSSpartansModel.swift in Sources */,
+				6091DE9224815B4C0038BFE2 /* IOSSpartanDetailsPresenter.swift in Sources */,
+				6091DE9624815DE90038BFE2 /* AndroidSpartanDetailsPresenter.swift in Sources */,
+				6091DE9424815DAF0038BFE2 /* AndroidSpartanDetailViewController.swift in Sources */,
 				60548BB5247EF6130086EFE7 /* AndroidSpartansPresenter.swift in Sources */,
 				60548BA4247EAF5C0086EFE7 /* SpartansView.swift in Sources */,
 				60548BB7247EFA940086EFE7 /* SelectionViewController.swift in Sources */,
+				6091DE90248159110038BFE2 /* TitleLabelView.swift in Sources */,
 				60548BA8247EB9300086EFE7 /* SpartanTableViewCell.swift in Sources */,
 				60548B9D247E9DE60086EFE7 /* SpartansService.swift in Sources */,
 				60548BA6247EB8290086EFE7 /* AutoResizingTableView.swift in Sources */,
-				60CC5E65247FEEA40029AC63 /* SpartanDetailsViewController.swift in Sources */,
+				60CC5E65247FEEA40029AC63 /* IOSSpartanDetailsViewController.swift in Sources */,
 				60548BA2247EAF050086EFE7 /* IOSSpartansPresenter.swift in Sources */,
 				60548BAA247EB9B50086EFE7 /* UITableViewCell+Utility.swift in Sources */,
 				60CC5E63247FEE920029AC63 /* SpartanDetailsView.swift in Sources */,

@@ -18,8 +18,8 @@ class IOSSpartansViewController: UIViewController {
             .subscribe(onNext: { [weak self] in self?.fetchNobleTeam() })
             .disposed(by: disposeBag)
 
-        spartansView.dismissObservable
-            .subscribe(onNext: { [weak self] in self?.dismiss(animated: true) })
+        spartansView.alertObservable
+            .subscribe(onNext: { [weak self] in self?.showAlert() })
                 .disposed(by: disposeBag)
 
         spartansView.spartanObservable?
@@ -49,9 +49,16 @@ class IOSSpartansViewController: UIViewController {
     }
 
     private func open(spartan serviceNumber: String) {
-        let spartanDetails = SpartanDetailsViewController(serviceNumber: serviceNumber)
+        let spartanDetails = IOSSpartanDetailsViewController(serviceNumber: serviceNumber)
 
         navigationController?.pushViewController(spartanDetails, animated: true)
+    }
+
+    private func showAlert() {
+        let alert = UIAlertController(title: "ONI Message 343", message: "The covenant have attacked Reach.", preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true)
     }
 
 }

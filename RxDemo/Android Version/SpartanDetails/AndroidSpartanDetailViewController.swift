@@ -1,16 +1,14 @@
 import UIKit
 import RxSwift
 
-class SpartanDetailsViewController: UIViewController {
+class AndroidSpartanDetailsViewController: UIViewController {
     private let disposeBag = DisposeBag()
     private let spartanDetailsView = SpartanDetailsView()
+    private let presenter: AndroidSpartanDetailsPresenter
 
-    init(serviceNumber: String) {
+    init(serviceNumber: String, model: AndroidSpartansModel = AndroidSpartansModel()) {
+        presenter = AndroidSpartanDetailsPresenter(model: model, view: spartanDetailsView, serviceNumber: serviceNumber)
         super.init(nibName: nil, bundle: nil)
-
-        spartanDetailsView.dismissObservable
-            .subscribe(onNext: dismiss)
-            .disposed(by: disposeBag)
     }
 
     required init?(coder: NSCoder) {
@@ -20,9 +18,5 @@ class SpartanDetailsViewController: UIViewController {
     override func loadView() {
         super.loadView()
         view = spartanDetailsView
-    }
-
-    private func dismiss() {
-        dismiss(animated: true)
     }
 }
