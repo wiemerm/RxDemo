@@ -19,7 +19,7 @@ struct AndroidSpartanDetailsPresenter {
         model.androidFetchSpartan(serviceNumber: serviceNumber)
             .subscribe(onNext: { [weak view] spartan in
                 view?.showBasicInfo(name: spartan.name, rank: spartan.rank.rawValue.capitalized, image: spartan.imageName)
-                view?.showDetailInfo(height: "\(spartan.height)", weight: "\(spartan.weight)", homeworld: spartan.homeworld)
+                view?.showDetailInfo(height: "\(spartan.height) cm", weight: "\(spartan.weight) kg", homeworld: spartan.homeworld)
 
             }, onError: { error in
                 //handle error

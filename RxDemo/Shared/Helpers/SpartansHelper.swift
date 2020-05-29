@@ -29,7 +29,7 @@ struct SpartansHelper {
     static let nobleSix = Spartan(serviceNumber: "S-B312",
                                   name: "Noble 6", birth: "Unknown", death: "August 30, 2552",
                                   height: 205, weight: 108, hairColor: "Unknown", eyeColor: "Unknown",
-                                  rank: .lieutenant, homeworld: "Jerico VII", armor: .mkV)
+                                  rank: .lieutenant, homeworld: "Jericho VII", armor: .mkV)
 
     static func nobleTeam() -> [Spartan] {
         return [

@@ -29,11 +29,11 @@ struct IOSSpartansModel: IOSSpartansModelInterface {
     private let spartanSubject = BehaviorSubject<String>(value: "")
 
     init(service: SpartansService = SpartansService()) {
-        // Later versions used Observers which get called with .onNext to trigger Subject to fetch the data
+        //newer iOS
         spartansListObserver = spartansListSubject.asObserver()
         spartanObserver = spartanSubject.asObserver()
 
-        //Set up observables to watch subject and call to service
+        //Both
         spartansListObservable = spartansListSubject
             .flatMapLatest { fetchSpartansSafely(service: service) }
             .asObservable()
@@ -45,7 +45,7 @@ struct IOSSpartansModel: IOSSpartansModelInterface {
             .share()
     }
 
-    //Alternatively earlier code used observable tied to subject with a function that would trigget the subject onNext
+    //older iOS
     func fetchNobleTeam() {
         spartansListSubject.onNext(())
     }
@@ -71,16 +71,3 @@ private func fetchSpartanSafely(service: SpartansService, serviceNumber: String)
             return Single.just(SpartanResult.failure(error as? NetworkError ?? NetworkError(code: 500)))
     }
 }
-
-/*
- iOS:
- The course that iOS chose was to attempt to fetch the data and catch any errors that occur mapping the error to a failed result instead of going through onError of the observable.
- Using result type and the fetch{item}Safely functions mean that if an error does occur, the Observable will not return the onError followed by onCompleted and will instead return an error within the onNext block and not close the observable allowing it to be disposed.
-
- Android:
- Model calls that service and ensures that the resulting observable is on the main thread for the presenter. Some mapping or filtering may occur within the model if needed (ex. Explore tab maps the categories to add the "Explore the ATC" item to the list
-
- Android primarily uses Observable instead of iOS which uses Single in the service layer and converts to Observable in the model layer
-
- Personal preference: Android - easier to test and less complicated
- */

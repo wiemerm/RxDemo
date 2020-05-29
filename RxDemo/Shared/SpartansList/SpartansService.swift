@@ -2,7 +2,7 @@ import Foundation
 import RxSwift
 
 class SpartansService {
-    private var firstLaunch = false
+    private var firstLaunch = true //fake out error first time loading the list
 
     func fetchSpartans() -> Single<[Spartan]> {
         let response = firstLaunch ? Single.error(NetworkError(code: 500)) : Single.just(SpartansHelper.nobleTeam())

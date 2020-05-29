@@ -69,8 +69,8 @@ class SpartanDetailsView: UIView {
         avatarImageView.image = UIImage(named: spartan.imageName)
         nameLabel.text = spartan.name
         rankLabel.text = spartan.rank.rawValue.capitalized
-        heightLabel.text = "\(spartan.height)"
-        weightLabel.text = "\(spartan.weight)"
+        heightLabel.text = "\(spartan.height) cm"
+        weightLabel.text = "\(spartan.weight) kg"
         homeworldLabel.text = spartan.homeworld
 
         avatarImageView.isHidden = false

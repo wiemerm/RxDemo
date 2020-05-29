@@ -22,8 +22,6 @@ class SpartansView: UIView {
 
         backgroundColor = .white
 
-        alertButton.setTitleColor(.red, for: .normal)
-
         tableview.dataSource = self
         tableview.delegate = self
         tableview.rowHeight = 100
@@ -31,7 +29,7 @@ class SpartansView: UIView {
         tableview.register(SpartanTableViewCell.self, forCellReuseIdentifier: SpartanTableViewCell.reuseIdentifier)
 
         alertButton.setTitle("Show Alert", for: .normal)
-        alertButton.setTitleColor(.black, for: .normal)
+        alertButton.setTitleColor(.red, for: .normal)
 
         addSubview(tableview)
         addSubview(errorView)

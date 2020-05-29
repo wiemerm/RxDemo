@@ -8,7 +8,6 @@ struct AndroidSpartansModel {
         self.service = service
     }
 
-    //Replicate what Android does for fetching and observables
     func androidFetchNobleTeam() -> Observable<[Spartan]> {
         return service.fetchSpartans()
             .observeOn(MainScheduler.instance)
